@@ -1,0 +1,6 @@
+{
+    "projectManager.checkInvalidPathsBeforeListing": true,
+    "projectManager.removeCurrentProjectFromList": true,
+    "projectManager.showProjectNameInStatusBar": true,
+    "projectManager.cacheProjectsBetweenSessions": true
+}

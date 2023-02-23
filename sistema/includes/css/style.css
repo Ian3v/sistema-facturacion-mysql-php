@@ -1,0 +1,390 @@
+@import url(../fonts/GothamBook.css);
+@import url(../fonts/GothamBold.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #ededed;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "arial";
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+h1 {
+  font-size: 26px;
+}
+h2 {
+  font-size: 20px;
+}
+h3 {
+  font-size: 18px;
+}
+h4 {
+  font-size: 16px;
+}
+h5 {
+  font-size: 14px;
+}
+h6 {
+  font-size: 12px;
+}
+p {
+  font-family: "arial";
+  letter-spacing: 2px;
+  font-size: 14px;
+  line-height: 20px;
+}
+a {
+  text-decoration: none;
+  font-family: arial;
+  letter-spacing: 1px;
+}
+span {
+  font-family: "GothamBook";
+  letter-spacing: 1px;
+  font-size: 14px;
+  line-height: 20px;
+}
+header {
+}
+.header {
+  color: #fff;
+  margin: 0;
+}
+html,
+body {
+}
+
+/* ---------------------------- Estilos Globales ---------------------------- */
+
+.btn_verde {
+  /* background-color: #4CAF50; */
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  border: none;
+  transition: background-color 0.3s ease;
+  width: auto;
+}
+.btn_rojo {
+  /* background-color: #4CAF50; */
+  background-color: #e65656;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  border: none;
+  transition: background-color 0.3s ease;
+  width: auto;
+  cursor: pointer;
+}
+
+/* -------------------------------------------------------------------------- */
+.optionsBar {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.optionsBar span {
+  color: #fff;
+  font-size: 11pt;
+  font-family: "GothamBook";
+  text-transform: uppercase;
+  margin-left: 30px;
+}
+.photouser {
+  margin-left: 30px;
+  width: 25px;
+  height: 25px;
+}
+.close {
+  width: 25px;
+  height: 25px;
+}
+.optionsBar a {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  margin-left: 30px;
+}
+
+.container_nav {
+  background-color: #4aace8;
+  margin: 0;
+  /* width: 15rem; */
+  display: inline-block;
+  padding: 2rem;
+  /* border-radius: 80px; */
+  height: 100%;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.4), -6px -6px 12px rgba(0, 0, 0, 0),
+    6px 6px 12px rgba(255, 255, 255, 0.1) inset,
+    -6px -6px 12px rgba(168, 168, 168, 0.4) inset;
+}
+.container_nav .ul_padre {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /* text-decoration: none; */
+  list-style: none;
+}
+
+.container_nav li {
+  font-weight: bold;
+  /* color: white!important; */
+}
+
+.container_nav li ul li {
+  font-weight: normal;
+  /* color: white; */
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+.container_nav li a {
+  color: #fff;
+}
+a {
+  color: white;
+}
+
+.container_header {
+  display: flex;
+  gap: 2rem;
+  background-color: #1c2a33;
+  padding: 2rem;
+  /* justify-content: center;
+	 */
+  align-items: center;
+  /* position: fixed; */
+  justify-content: space-between;
+  width: 100%;
+}
+.header_spacing {
+  /* height: 127px; */
+}
+.optionsBar {
+  display: flex;
+
+}
+
+.container_main {
+  /* display: flex; */
+  height: 100%;
+  gap: 2rem;
+  height: 100%;
+  width: auto;
+
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
+}
+
+.container_nav {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.container_lista_usuarios {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.form_register {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  margin-top: 5rem;
+
+}
+
+.formulario_registro {
+  display: flex;
+  flex-direction: column;
+
+  width: 20rem;
+
+  margin: 0 auto;
+  gap: 3px;
+}
+.registro_container {
+  width: 100%;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+/* -------------------------------------------------------------------------- */
+
+.alert {
+  width: 100%;
+  background-color: #66e07d66;
+  border-radius: 6px;
+  margin: 20px auto;
+}
+.msg_error {
+  color: #e65656;
+}
+
+.msg_save {
+  color: #126e00;
+}
+
+.alert p {
+  padding: 10px;
+}
+
+.link_b {
+  color: black;
+}
+
+/* ------------------------------ LISTA usuairo ----------------------------- */
+
+.container_lista_usuarios {
+
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+.header_listausuario {
+  display: flex;
+  justify-content: space-between;
+  /* flex-direction: column; */
+  align-items: center;
+}
+
+.btn_new {
+
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  border: none;
+  transition: background-color 0.3s ease;
+  width: auto;
+}
+
+.table_lista {
+  width: 100%;
+
+}
+.tabla_listausuarios {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 16px;
+}
+tr {
+  background-color: #bdc5eb;
+}
+th,
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #596feb;
+  font-weight: bold;
+  color: #333;
+  color: white;
+}
+tr:nth-child(odd) {
+  background-color: #d3ebfc;
+}
+
+/* Estilo de las filas pares */
+tr:nth-child(even) {
+  background-color: #e6fffe;
+}
+
+td a {
+  font-family: bold;
+  color: black;
+  background-color: #126e00;
+  color: white;
+  padding: 4px 4px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  border: none;
+  transition: background-color 0.3s ease;
+  width: auto;
+}
+
+/* -------------------------- links editar eliminar ------------------------- */
+.edit_delet {
+  display: flex;
+  gap: 2px;
+}
+
+.link_edit {
+  background: #408fe9;
+}
+.link_delete {
+  background-color: #eb5959;
+}
+
+/* Estilo apra que en las opciones de Actulizar no se duplique la opcion */
+.notItemOne option:first-child {
+  display: none;
+}
+
+/* ----------------------------- ELIMINAR USARIO ---------------------------- */
+.data_delete {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.container_data_delete {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.form_cancelar form {
+  display: flex;
+  gap: 2rem;
+}
+.container_data_delete span {
+  font-weight: bold;
+  font-size: 20px;
+  color: #005ac7;
+}

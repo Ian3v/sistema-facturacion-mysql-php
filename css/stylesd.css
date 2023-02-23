@@ -1,0 +1,162 @@
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    /* font-family: v.$fuente_principal; */
+    font-size: 1.6rem;
+    line-height: 1.8;
+    background-color: rgb(232, 232, 232);
+}
+p {
+    /* color: v.$negro; */
+    font-size: 2rem;
+}
+.container {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+img,
+picture {
+    width: 100%;
+    display: block;
+}
+
+h1, h2, h3 {
+    /* font-family: v.$fuente_principal; */
+    /* margin: calc(v.$separacion / 2) 0; */
+    font-weight: 300;
+    text-align: center;
+    
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+h2 {
+    font-size: 3.4rem;
+}
+h3 {
+    font-size: 3rem;
+}
+h4 {
+    font-size: 2.6rem;
+}
+
+
+/* -------------------------------------------------------------------------- */
+h3{
+    /* font-size: 18px; */
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+}
+
+.container_form{
+    height: 58rem;
+    display: grid;
+    place-content: center;
+
+}
+.form{
+    /* background-color: rgb(255, 255, 255); */
+    display: grid;
+    place-content: center;
+    /* border: 2px solid rgb(0, 0, 0); */
+    /* border-radius: 2rem; */
+
+    padding: 10rem 10rem 10rem 10rem;
+
+    gap: 2rem;
+
+    /* box-shadow: inset 0px 0px 5px #999, 0px 0px 5px #999;*/
+    /* background-color: #eee;
+  border: 3px solid #999;
+  box-shadow: 0px 0px 4rem #999;  */
+
+  /* width: 200px; */
+  /* height: 200px; */
+  /* background-color: #f0f0f0;
+  border-radius: 20px;
+  box-shadow: 10px 10px 30px #b9b9b9, -10px -10px 30px #2d2d2d; */
+  /* transform: rotate(2deg); */
+
+  background-color: #e2e2e2;
+  border-radius: 80px;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.4), -6px -6px 12px rgba(255, 255, 255, 0.8), 6px 6px 12px rgba(255, 255, 255, 0.1) inset, -6px -6px 12px rgba(255, 255, 255, 0.4) inset;
+  /* transform: rotate(2deg); */
+}
+.form h3{
+
+}
+
+.input_usuario, .input_clave{
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    box-shadow:
+    6px 6px 12px rgba(128, 128, 128, 0.4), -6px -6px 12px rgba(255, 255, 255, 0.8), 6px 6px 12px rgba(132, 129, 129, 0.1) inset, -6px -6px 12px rgba(255, 255, 255, 0.4) inset;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.input_usuario:focus ,.input_clave:focus{
+    box-shadow:
+    4px 4px 8px rgba(128, 128, 128, 0.2),
+    -4px -4px 8px rgba(255, 255, 255, 0.5),
+    4px 4px 8px rgba(128, 128, 128, 0.05) inset,
+    -4px -4px 8px rgba(255, 255, 255, 0.2) inset;
+  transform: translate(2px, 2px);
+}
+
+.btn_ingresar{
+    display: inline-block;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  background-color: #e6e6e6;
+  box-shadow:
+    6px 6px 12px rgba(128, 128, 128, 0.4),
+    -6px -6px 12px rgba(255, 255, 255, 0.8),
+    6px 6px 12px rgba(128, 128, 128, 0.1) inset,
+    -6px -6px 12px rgba(255, 255, 255, 0.4) inset;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn_ingresar:hover {
+    box-shadow:
+      4px 4px 8px rgba(128, 128, 128, 0.2),
+      -4px -4px 8px rgba(255, 255, 255, 0.5),
+      4px 4px 8px rgba(128, 128, 128, 0.05) inset,
+      -4px -4px 8px rgba(255, 255, 255, 0.2) inset;
+    transform: translate(2px, 2px);
+  }
+
+  .input_clave::placeholder, .input_usuario::placeholder {
+    color: #000000; /* Color del texto del placeholder */
+    font-size: 14px; /* Tamaño de fuente del placeholder */
+    font-style: italic; /* Estilo de fuente del placeholder */
+    font-weight: bold; /* Peso de fuente del placeholder */
+
+  }
